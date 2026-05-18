@@ -11,11 +11,23 @@ export function Footer() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
             <div style={{
               width: '42px', height: '42px', borderRadius: '50%',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: '1.1rem', fontWeight: 800,
-              background: 'linear-gradient(135deg,#166534,#d97706)', color: '#fff',
-              boxShadow: '0 0 14px rgba(217,119,6,0.3)',
-            }}>F</div>
+              overflow: 'hidden', flexShrink: 0,
+              boxShadow: '0 0 0 2px #d97706, 0 0 14px rgba(217,119,6,0.3)',
+              background: '#fff',
+            }}>
+              <img
+                src="/logo.png"
+                alt="Fruit of Africa"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                onError={e => {
+                  const t = e.currentTarget
+                  t.style.display = 'none'
+                  const parent = t.parentElement!
+                  parent.style.background = 'linear-gradient(135deg,#166534,#d97706)'
+                  parent.innerHTML = '<span style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:#fff">F</span>'
+                }}
+              />
+            </div>
             <div>
               <div style={{ fontSize: '1.05rem', fontWeight: 700, fontFamily: 'Georgia, serif', color: '#fbbf24' }}>Fruit of Africa</div>
               <div style={{ fontSize: '0.7rem', color: '#86efac', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Church</div>
