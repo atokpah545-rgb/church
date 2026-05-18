@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #166534;
+  --color-primary-light: #15803d;
+  --color-primary-dark: #14532d;
+  --color-accent: #d97706;
+  --color-accent-light: #f59e0b;
+  --color-accent-dark: #b45309;
+  --color-bg: #0d1f0d;
+  --color-bg-card: #111f11;
+  --color-bg-surface: #162616;
+  --color-gold: #d97706;
+  --color-gold-light: #fbbf24;
+
+  --font-family-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-family-display: 'Playfair Display', Georgia, serif;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(217, 119, 6, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(217, 119, 6, 0.7); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d1f0d;
+  color: #f0fdf4;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0d1f0d; }
+::-webkit-scrollbar-thumb { background: #d97706; border-radius: 3px; }
+
+#root {
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(22, 101, 52, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 119, 6, 0.15);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #d97706, #fbbf24, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.section-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-fade-in { animation: fade-in 0.6s ease-out forwards; }
+.animate-slide-up { animation: slide-up 0.7s ease-out forwards; }
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }

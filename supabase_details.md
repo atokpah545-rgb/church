@@ -1,0 +1,3 @@
+Anon-key = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZxa2dya3p3b3Rnb2Jqa3dhZGtsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg4NzMzNDEsImV4cCI6MjA5NDQ0OTM0MX0.Dh-vSaVwa11pOtU4H9_GIAAWkG7i1qxeiyyb12eyV2U
+
+Project URL = https://vqkgrkzwotgobjkwadkl.supabase.co
