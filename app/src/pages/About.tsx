@@ -10,9 +10,9 @@ const values = [
 ]
 
 const services = [
-  { day: 'Sunday', name: '1st Service', time: '9:00 AM' },
-  { day: 'Sunday', name: '2nd Service', time: '11:00 AM' },
-  { day: 'Wednesday', name: 'Bible Study', time: '6:00 PM' },
+  { day: 'Sunday', name: 'Sunday Service', time: '10:00 AM' },
+  { day: 'Wednesday', name: 'Prayer Meeting', time: '6:00 PM' },
+  { day: 'Friday', name: 'Bible Study', time: '6:00 PM' },
 ]
 
 const up = (delay = 0) => ({

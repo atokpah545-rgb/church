@@ -76,14 +76,21 @@ export function Footer() {
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
               <Clock size={14} style={{ color: '#d97706', flexShrink: 0, marginTop: '2px' }} />
               <div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#86efac' }}>Sunday Services</div>
-                <div style={{ fontSize: '0.8rem', color: '#6b7280', marginTop: '2px' }}>9:00 AM &amp; 11:00 AM</div>
+                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#86efac' }}>Sunday Service</div>
+                <div style={{ fontSize: '0.8rem', color: '#6b7280', marginTop: '2px' }}>10:00 AM</div>
               </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
               <Clock size={14} style={{ color: '#d97706', flexShrink: 0, marginTop: '2px' }} />
               <div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#86efac' }}>Wednesday Bible Study</div>
+                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#86efac' }}>Wednesday Prayer Meeting</div>
+                <div style={{ fontSize: '0.8rem', color: '#6b7280', marginTop: '2px' }}>6:00 PM</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+              <Clock size={14} style={{ color: '#d97706', flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#86efac' }}>Friday Bible Study</div>
                 <div style={{ fontSize: '0.8rem', color: '#6b7280', marginTop: '2px' }}>6:00 PM</div>
               </div>
             </div>
